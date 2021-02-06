@@ -1,0 +1,20 @@
+<div class="contenedor">
+    <div class="image">
+        <img src="./assets/img/card.jpg" alt="">
+        <ul>
+            <li>{{user.nombre}}</li>
+            <li>{{user.password}}</li>
+        </ul>
+    </div>
+    <div class="cont-form">
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" [(ngModel)]="user.nombre">
+            <label for="password">Password</label>
+            <input type="password" name="password" [(ngModel)]="user.password">
+            <input type="submit" class="bottom" value="agregar" (click)="edit ? update() : add()">
+        </form>
+    </div>
+
+
+</div>
